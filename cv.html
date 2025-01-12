@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Fikir Tilahun</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
 
     <!-- Boxicons Link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -14,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 </head>
+<style>
+    
+</style>
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -27,36 +32,178 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
 
-            </nav>
-        <div class="container">
-            <h1>Fikir Tilahun - Curriculum Vitae</h1>
-            <p>Web Developer | Software Engineer</p>
-            
-        </div>
+        </nav>
+        
     </header>
+
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+
+        section {
+            background-color: #e7f5e8;  
+            border: 1px solid #c3dac3;
+            border-radius: 8px;
+            padding: 5px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        section h3 {
+            color: #003300;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #c3dac3;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        section h4{
+            color: #003300;
+        }
+         
+        section p{
+            color: #003300;
+        }
+
+        /* Tablet Portrait  */
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;  
+                padding: 10px;
+                gap: 30px;  
+            }
+
+            section {
+                max-width: 100%;  
+                margin: 0 auto;  
+                padding: 15px;  
+            }
+
+            h3, h4 {
+                font-size: 1.6rem; 
+            }
+
+            p, li {
+                font-size: 1rem;  
+            }
+
+            .cv-section {
+                margin-bottom: 20px; 
+            }
+
+            .experience-entry ul {
+                padding-left: 20px; 
+            }
+        }
+
+        /* Tablet Landscape  */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);  
+                gap: 20px;  
+                padding: 20px;
+            }
+
+            section {
+                max-width: 90%;  
+                margin: 0 auto;  
+                padding: 20px;
+            }
+
+            h3, h4 {
+                font-size: 1.8rem;  
+            }
+
+            p, li {
+                font-size: 1.1rem;  
+            }
+
+            .cv-section {
+                margin-bottom: 25px;  
+            }
+
+            .experience-entry ul {
+                padding-left: 20px;  
+            }
+        }
+
+        /* Portrait Mobile */
+        @media (max-width: 767px) {
+            main {
+                grid-template-columns: 1fr;  
+                padding: 10px; 
+            }
+
+            section {
+                max-width: 100%;  
+                margin: 10px 0; 
+                padding: 10px;  
+            }
+
+            section h3 {
+                font-size: 1.2rem; 
+            }
+
+            section h4 {
+                font-size: 1rem; 
+            }
+
+            section p {
+                font-size: 0.9rem;  
+            }
+        }
+
+        /* Landscape Mobile */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);  
+                padding: 20px;
+            }
+
+            section {
+                max-width: 100%;  
+            }
+
+            section h3 {
+                font-size: 1.3rem;  
+            }
+
+            section h4 {
+                font-size: 1.1rem;  
+            }
+        }
+
+    </style>
+
     <main>
-        <!-- CV Section -->
-       <section class="experience-entry">
-                    <h5>Web Developer Intern</h5>
+
+        <section class="contact-info">
+            <div class="cv-section">
+                <h3>Contact Information</h3>
+                <h4>Feel free to reach out for collaborationor just a chat</h4>
+                <p><strong>Email:</strong>fikertilahun381@gmail.com</p>
+                <p><strong>Phone:</strong>+251 954 88 57 17</p>
+                <p><strong>LinkedIn:</strong>https://www.linkedin.com/in/fikir-tilahun-652842224</p>
+                <p><strong>GitHub:</strong>https://github.com/fikir-tilahun</p>
+                <p><strong>Telegram:</strong>@Fif381</p>
+            </div>
+                       
+        </section>
+        
+        <section class="experience">
+            <div class="container">
+                <div class="experience-entry">
+                    <h3>Experiences</h3>
+                    <h4>Web Developer Intern</h4>
                     <p><strong>Company:</strong> Eshi Tech Solutions</p>
                     <p><strong>Duration:</strong> June 2023 - August 2023</p>
-               <section class="cv">
-        <div class="container">
-        <h3>Curriculum Vitae</h3>
-            <!-- Experience Section -->
-            <div class="cv-section">
-                <h4>Professional Experience</h4>
-                  <p><strong>Responsibilities:</strong></p>
-                    <ul>
-                        <li>Developed and maintained responsive websites using HTML, CSS, and JavaScript.</li>
-                        <li>Collaborated with designers and project managers to deliver on-time project completion.</li>
-                        <li>Optimized website performance for better load times and user experience.</li>
-                    </ul>
-                </div>
-                <div class="experience-entry">
-                    <h5>Junior Developer Intern</h5>
-                    <p><strong>Company:</strong> Global Web Agency</p>
-                    <p><strong>Duration:</strong> June 2024 - August 2024</p>
+                    <h4>Professional Experience</h4>
                     <p><strong>Responsibilities:</strong></p>
                     <ul>
                         <li>Assisted in building and testing small-scale web applications.</li>
@@ -65,7 +212,22 @@
                     </ul>
                 </div>
             </div>
-            <!-- Skills Section -->
+            
+            <div class="experience-entry">
+                <h4>Junior Developer Intern</h4>
+                <p><strong>Company:</strong> Global Web Agency</p>
+                <p><strong>Duration:</strong> June 2024 - August 2024</p>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Assisted in building and testing small-scale web applications.</li>
+                    <li>Worked with senior developers to fix bugs and implement new features.</li>
+                    <li>Gained hands-on experience in version control using Git and GitHub.</li>
+                </ul>
+            </div>   
+        </section>            
+        
+        <!-- Skills Section -->
+        <section class="skills">
             <div class="cv-section">
                 <h4>Skills</h4>
                 <ul class="skills-list">
@@ -77,7 +239,7 @@
                 </ul>
             </div>
 
-            <!-- Certifications Section -->
+             
             <div class="cv-section">
                 <h4>Certifications</h4>
                 <ul class="certifications-list">
@@ -85,25 +247,20 @@
                     <li>React Developer Certification - Codecademy (2023)</li>
                     <li>Introduction to web developing  - The odin (2024)</li>
                 </ul>
-            </div>
-        
-
-        <section class="share">
-            <p>Check out my</p>
-    
-            <div class="social">
-                <a href="https://www.instagram.com/fif_381_" target="_blank">
-                    <i class="bx bxl-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/fikir-tilahun-652842224" target="_blank">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-            </div>
-        </section>
+            </div>           
+        </section>    
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/fif_381_" target="_blank" aria-label="Instagram" style="color: #FFF;">
+                <i class="bx bxl-instagram" onmouseover="this.style.color='#E91E63'" onmouseout="this.style.color='#FFF'"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fikir-tilahun-652842224" target="_blank" aria-label="LinkedIn" style="color: #FFF;">
+                <i class="bx bxl-linkedin" onmouseover="this.style.color='#0077B5'" onmouseout="this.style.color='#FFF'"></i>
+            </a>
+        </div>
         <div class="container">
             <p>&copy; 2024 Fikir Tilahun | All Rights Reserved</p>
         </div>

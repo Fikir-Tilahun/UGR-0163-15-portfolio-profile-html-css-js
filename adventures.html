@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventures - Fikir Tilahun</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <!-- Boxicons Link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -13,6 +15,132 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 </head>
+<style>
+
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+
+    .adventures h3 {
+        font-size: 28px;
+        text-align: center;
+        color: #003300;
+        margin-bottom: 20px;
+    }
+    .adventures h4 {
+        color: #003300;
+        text-align: center;
+
+    }
+
+    .adventures .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);;
+        gap: 30px;
+    }
+
+    /* Tablet Portrait */
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+        .adventures .container {
+            grid-template-columns: 1fr; 
+            gap: 20px;  
+            padding: 10px;  
+        }
+
+        .adventure-entry video {
+            height: 60%;  
+        }
+
+        .adventure-entry p {
+            font-size: 1rem;  
+        }
+
+        h3, h4 {
+            font-size: 1.6rem;  
+        }
+    }
+
+    /* Tablet Landscape  */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .adventures .container {
+            grid-template-columns: repeat(2, 1fr);  
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        .adventure-entry video {
+            height: 60%;  
+        }
+
+        .adventure-entry p {
+            font-size: 1.1rem;  
+        }
+
+        h3, h4 {
+            font-size: 1.8rem;  
+        }
+    }
+
+        /* Mobile Portrait   */
+    @media (max-width: 767px) and (orientation: portrait) {
+        .adventures .container {
+            grid-template-columns: 1fr; 
+        }
+
+        .adventures h3 {
+            font-size: 24px;  
+        }
+
+        .adventures h4 {
+            font-size: 16px;  
+        }
+
+        .adventure-entry video {
+            width: 100%;  
+            height: auto;
+        }
+
+        .adventure-entry p {
+            font-size: 14px; 
+        }
+
+        .adventure-entry {
+            margin-bottom: 20px;  
+        }
+    }
+
+    /* Mobile Landscape   */
+    @media (max-width: 767px) and (orientation: landscape) {
+        .adventures .container {
+            grid-template-columns: 1fr;  
+        }
+
+        .adventures h3 {
+            font-size: 26px;  
+        }
+
+        .adventures h4 {
+            font-size: 18px;  
+        }
+
+        .adventure-entry video {
+            width: 100%;  
+            height: auto;
+        }
+
+        .adventure-entry p {
+            font-size: 15px;  
+        }
+
+        .adventure-entry {
+            margin-bottom: 20px;  
+        }
+    }
+
+</style>
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -26,19 +154,15 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
-        <div class="container">
-            <h1>Fikir Tilahun - My Adventures</h1>
-            <p>Explore some of my amazing experiences and travels</p>
-        </div>
     </header>
 
     <main>
 
-        <!-- Adventures Section -->
         <section class="adventures">
+            <h3>My Adventures</h3>
+            <h4>Explore some of my amazing experiencesand travels</h4>
             <div class="container">
-                <h3>Adventures</h3>
-            
+    
             <!-- Adventure 1 -->
             <div class="adventure-entry">
                 <video controls>
@@ -86,22 +210,18 @@
             </div>
         </section>
 
-        <div class="share">
-            <p>Check out my</p>
-
-                <div class="social">
-                <a href="https://www.instagram.com/fif_381_" target="_blank">
-                    <i class="bx bxl-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/Fikir_Tilahun" target="_blank">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-            </div>
-        </div>
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/fif_381_" target="_blank" aria-label="Instagram" style="color: #FFF;">
+                <i class="bx bxl-instagram" onmouseover="this.style.color='#E91E63'" onmouseout="this.style.color='#FFF'"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fikir-tilahun-652842224" target="_blank" aria-label="LinkedIn" style="color: #FFF;">
+                <i class="bx bxl-linkedin" onmouseover="this.style.color='#0077B5'" onmouseout="this.style.color='#FFF'"></i>
+            </a>
+        </div>
         <div class="container">
             <p>&copy; 2024 Fikir Tilahun | All Rights Reserved</p>
         </div>
